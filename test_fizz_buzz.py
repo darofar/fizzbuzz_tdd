@@ -19,3 +19,7 @@ def test_fizz_buzz_3():
 
 def test_fizz_buzz_5():
     assert fizz_buzz(5) == "Buzz"
+
+
+def test_fizz_buzz_6():
+    assert fizz_buzz(6) == "Fizz"
