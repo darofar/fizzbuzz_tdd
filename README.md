@@ -19,52 +19,31 @@ Also you can found documentation about this procedure [here](https://en.wikipedi
 ## Current step
 
 ### Write a test that fails. 
-The seventh and eighth use cases we ignore. Because they already have been covered by `tes_fizz_buzz_n`test. It will 
-only add a new line testing each number. We assume that with three example will be enough. 
-
-The ninth use case we implemented. But it also passes right away. So we continue with the tenth use case that will fail
-because we haven't implemented yet the multiple of 5 check on fizz_buzz function. 
+From eleventh use case to fourteenth use case we did not implement any other test because we consider that all of them 
+are already covered by the test cases we got. When comming to the fifteenth use case we got the first one that expects a
+`FizzBuzz` word based on requirements. The tests fails. 
 
 ```
 python -m pytest test_fizz_buzz.py 
 ======================================== test session starts ========================================
 platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
 rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 7 items                                                                                   
+collected 5 items                                                                                   
 
-test_fizz_buzz.py ......F                                                                     [100%]
+test_fizz_buzz.py ....F                                                                       [100%]
 
 ============================================= FAILURES ==============================================
-_________________________________________ test_fizz_buzz_10 _________________________________________
+___________________________________ test_fizz_buzz_multiple_of_15 ___________________________________
 
-    def test_fizz_buzz_10():
->       assert fizz_buzz(10) == "Buzz"
-E       AssertionError: assert 10 == 'Buzz'
-E        +  where 10 = fizz_buzz(10)
+    def test_fizz_buzz_multiple_of_15():
+>       assert fizz_buzz(15) == "FizzBuzz"
+E       AssertionError: assert 'Fizz' == 'FizzBuzz'
+E         - Fizz
+E         + FizzBuzz
 
-test_fizz_buzz.py:33: AssertionError
-==================================== 1 failed, 6 passed in 0.05s ====================================
+test_fizz_buzz.py:28: AssertionError
+==================================== 1 failed, 4 passed in 0.03s ====================================
 ``` 
-
-### Write minimum code that make test pass.
-Now we implement the multiple of 5 code. 
-
-```
-python -m pytest test_fizz_buzz.py 
-======================================== test session starts ========================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 7 items                                                                                   
-
-test_fizz_buzz.py .......                                                                     [100%]
-
-========================================= 7 passed in 0.01s =========================================
-```
-
-### Refactor 
-Now it is evident that we can group `test_fizz_buzz_3`, `test_fizz_buzz_6` and `test_fizz_buzz_9` under a single 
-function because all this tests are related. We group them under `test_fizz_buzz_multiple_of_3`. 
-We also did this with `test_fizz_buzz_5` and `test_fizz_buzz_10` grouped over `test_fizz_buzz_multiple_of_5`.
 
 <br />
 <br />
