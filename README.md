@@ -9,7 +9,7 @@ and test code) to eliminate redundancies, commit to higher standards, etc.
 
 The following image resume this process: 
 
-![TDD](https://upload.wikimedia.org/wikipedia/commons/0/0b/TDD_Global_Lifecycle.png =750x)
+![TDD](https://upload.wikimedia.org/wikipedia/commons/0/0b/TDD_Global_Lifecycle.png)
 
 Also you can found documentation about this procedure [here](https://en.wikipedia.org/wiki/Test-driven_development)
 
@@ -34,4 +34,8 @@ pip install -r requirements.txt
 ### Refactor code
 - Added a `.gitignore` file to avoid IDE and cache files to be added to the repository. 
 ``` 
+#.gitignore
+.idea
+.pytest_cache
+__pycache__
 ```
