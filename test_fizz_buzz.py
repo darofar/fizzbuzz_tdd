@@ -7,20 +7,14 @@ def test_environment():
     assert sys.version_info.minor == 7
 
 
-def test_fizz_buzz_1():
+def test_fizz_buzz_n():
     assert fizz_buzz(1) == 1
-
-
-def test_fizz_buzz_2():
     assert fizz_buzz(2) == 2
+    assert fizz_buzz(4) == 4
 
 
 def test_fizz_buzz_3():
     assert fizz_buzz(3) == "Fizz"
-
-
-def test_fizz_buzz_4():
-    assert fizz_buzz(4) == 4
 
 
 def test_fizz_buzz_5():

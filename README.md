@@ -62,7 +62,8 @@ test_fizz_buzz.py ......                                                        
 ```
 
 # Refactor 
-Nothing to do. 
+We can group `test_fizz_buzz_1`, `test_fizz_buzz_2` y `test_fizz_buzz_4` in one test, because clearly all those three 
+tests are related. 
 
 <br />
 <br />
