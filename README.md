@@ -46,6 +46,21 @@ test_fizz_buzz.py:33: AssertionError
 ==================================== 1 failed, 6 passed in 0.05s ====================================
 ``` 
 
+### Write minimum code that make test pass.
+Now we implement the multiple of 5 code. 
+
+```
+python -m pytest test_fizz_buzz.py 
+======================================== test session starts ========================================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
+rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
+collected 7 items                                                                                   
+
+test_fizz_buzz.py .......                                                                     [100%]
+
+========================================= 7 passed in 0.01s =========================================
+```
+
 
 <br />
 <br />
