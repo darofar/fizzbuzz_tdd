@@ -19,8 +19,6 @@ Also you can found documentation about this procedure [here](https://en.wikipedi
 This test is meant to test the first use case for FizzBuzz algorithm. That `fizz_buzz(1) = 1`. It fails because a 
 function named `fizz_buzz` did not exists. 
 
-
-
 ```
 $> python -m pytest test_fizz_buzz.py 
 ==========================================================
@@ -32,6 +30,24 @@ test_fizz_buzz.py:7: NameError
 ==========================================================
 ```
 
+### Write minimum code that make test pass. 
+- Create a new module `fizz_buzz` with a function defined `fizz_buzz`that receives a parameter and always return 1. 
+
+```
+python -m pytest test_fizz_buzz.py 
+==========================================================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
+rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
+collected 2 items                                                                                                                                                                                          
+
+test_fizz_buzz.py ..                                                                                                                                                                                 [100%]
+
+========================================================== 2 passed in 0.01s
+```
+
+<br />
+<br />
+<hr />
 
 ## First Step
 

@@ -1,3 +1,6 @@
+from fizz_buzz import fizz_buzz
+
+
 def test_environment():
     import sys
     assert sys.version_info.major == 3
