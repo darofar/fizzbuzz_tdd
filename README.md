@@ -45,6 +45,24 @@ E        +  where 5 = fizz_buzz(5)
 test_fizz_buzz.py:27: AssertionError
 ==================================== 1 failed, 5 passed in 0.03s ====================================
 ``` 
+### Write minimum code that make test pass.
+We check if number passed as parameter is `5`, add that to the last check about if it is `3`.  If it is `5`we return 
+`"Buzz"` word. In any other cases return the parameter. 
+
+```
+python -m pytest test_fizz_buzz.py 
+======================================== test session starts ========================================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
+rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
+collected 6 items                                                                                   
+
+test_fizz_buzz.py ......                                                                      [100%]
+
+========================================= 6 passed in 0.01s =========================================
+```
+
+# Refactor 
+Nothing to do. 
 
 <br />
 <br />
