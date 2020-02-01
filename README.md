@@ -62,6 +62,21 @@ test_fizz_buzz.py .....                                                         
 ========================================= 5 passed in 0.01s =========================================
 ```
 
+### Refactor 
+We decide that it will be more clean to check if parameter is multiple of 15 instead of multiple of 3 and 5. This is 
+equivalent but we found more concise.
+
+From this:
+```
+    if n % 3 == 0 and n % 5 == 0:
+        return "FizzBuzz"
+```
+To this:
+```
+    if n % 15 == 0:
+        return "FizzBuzz"
+```
+
 <br />
 <br />
 <hr />
@@ -74,3 +89,4 @@ test_fizz_buzz.py .....                                                         
 - [Step 4: fizz_buzz(3)](https://github.com/darofar/fizzbuzz_tdd/blob/0c449473984dd9d24de5969cc5b3f095963bd6b3/README.md)
 - [Step 5: fizz_buzz(5)](https://github.com/darofar/fizzbuzz_tdd/blob/543513797610aaa2c5d9a11fb799fe7dd68b2676/README.md)
 - [Step 6: fizz_buzz(6)](https://github.com/darofar/fizzbuzz_tdd/blob/2513a485b38a2a88036c524466a6332da361ff36/README.md)
+- [Step 7: fizz_buzz(10)](https://github.com/darofar/fizzbuzz_tdd/blob/f2aeb420ab07ac2d53ab15a8ef1037cb511276f6/README.md)
