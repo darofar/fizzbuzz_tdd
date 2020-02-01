@@ -43,7 +43,22 @@ test_fizz_buzz.py:25: AssertionError
 ==================================== 1 failed, 4 passed in 0.03s ====================================
 ``` 
 
+### Write minimum code that make test pass.
+Now we need to make fizz_buzz function to checks if the residue of the parameter divide by 3 is 0. This is the same as 
+ask if the parameter is multiple of 3. If we replace this check for the old `parameter == 3` it will complaint both use 
+cases: `fizz_buzz(3)` and `fizz_buzz(6)`. 
 
+```
+python -m pytest test_fizz_buzz.py 
+======================================== test session starts ========================================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
+rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
+collected 5 items                                                                                   
+
+test_fizz_buzz.py .....                                                                       [100%]
+
+========================================= 5 passed in 0.01s =========================================
+```
 
 
 <br />
