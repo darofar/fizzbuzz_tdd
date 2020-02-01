@@ -61,6 +61,10 @@ test_fizz_buzz.py .......                                                       
 ========================================= 7 passed in 0.01s =========================================
 ```
 
+### Refactor 
+Now it is evident that we can group `test_fizz_buzz_3`, `test_fizz_buzz_6` and `test_fizz_buzz_9` under a single 
+function because all this tests are related. We group them under `test_fizz_buzz_multiple_of_3`. 
+We also did this with `test_fizz_buzz_5` and `test_fizz_buzz_10` grouped over `test_fizz_buzz_multiple_of_5`.
 
 <br />
 <br />

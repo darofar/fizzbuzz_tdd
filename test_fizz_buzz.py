@@ -13,21 +13,12 @@ def test_fizz_buzz_n():
     assert fizz_buzz(4) == 4
 
 
-def test_fizz_buzz_3():
+def test_fizz_buzz_multiple_of_3():
     assert fizz_buzz(3) == "Fizz"
-
-
-def test_fizz_buzz_5():
-    assert fizz_buzz(5) == "Buzz"
-
-
-def test_fizz_buzz_6():
     assert fizz_buzz(6) == "Fizz"
-
-
-def test_fizz_buzz_9():
     assert fizz_buzz(9) == "Fizz"
 
 
-def test_fizz_buzz_10():
+def test_fizz_buzz_multiple_of_5():
+    assert fizz_buzz(5) == "Buzz"
     assert fizz_buzz(10) == "Buzz"
