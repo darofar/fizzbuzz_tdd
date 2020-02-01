@@ -9,3 +9,7 @@ def test_environment():
 
 def test_fizz_buzz_1():
     assert fizz_buzz(1) == 1
+
+
+def test_fizz_buzz_2():
+    assert fizz_buzz(2) == 2

@@ -19,64 +19,37 @@ Also you can found documentation about this procedure [here](https://en.wikipedi
 ## Current step
 
 ### Write a test that fails. 
-This test is meant to test the first use case for FizzBuzz algorithm. That `fizz_buzz(1) = 1`. It fails because a 
-function named `fizz_buzz` did not exists. 
-
-```
-$> python -m pytest test_fizz_buzz.py 
-==========================================================
-    def test_fizz_buzz_1():
->       assert fizz_buzz(1) == 1
-E       NameError: name 'fizz_buzz' is not defined
-
-test_fizz_buzz.py:7: NameError
-==========================================================
-```
-
-### Write minimum code that make test pass. 
-- Create a new module `fizz_buzz` with a function defined `fizz_buzz`that receives a parameter and always return 1. 
+Second use case test `fizz_buzz(2) = 2`. As current function always return `2` it will fails.
 
 ```
 python -m pytest test_fizz_buzz.py 
 ======================================== test session starts ========================================
 platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
 rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 2 items                                                                                   
+collected 3 items                                                                                   
 
-test_fizz_buzz.py ..                                                                          [100%]
+test_fizz_buzz.py ..F                                                                         [100%]
 
-========================================= 2 passed in 0.01s =========================================
-```
+============================================= FAILURES ==============================================
+_________________________________________ test_fizz_buzz_2 __________________________________________
+
+    def test_fizz_buzz_2():
+>       assert fizz_buzz(2) == 2
+E       assert 1 == 2
+E        +  where 1 = fizz_buzz(2)
+
+test_fizz_buzz.py:15: AssertionError
+==================================== 1 failed, 2 passed in 0.02s ====================================
+(.venv) darofar@tardis:~/workspace/keepler/tdd_katas/fizzbuzz_tdd$ 
+``` 
+
 
 <br />
 <br />
 <hr />
 
-## First Step
+## Previous Steps
 
-### Write a test that fails. 
-This test is meant to test properly configured environment with python 3.7 as project interpreter. 
+[Step 1](https://github.com/darofar/fizzbuzz_tdd/blob/3836e05c9f868c29cfb77241c703259afbd98d21/README.md)
+[Step 2](https://github.com/darofar/fizzbuzz_tdd/blob/8ae70a62115a3ab44c30463d2da2e6b359c1f587/README.md)
 
-```
-$> python -m pytest test_fizz_buzz 
-/usr/bin/python: No module named pytest
-```
-### Write minimum code that make test pass. 
-- Created a virtual environment with python 3.7 as interpreter. 
-```
-virtualenv -p /usr/bin/python3.7 .venv
-```
-- Added a requirements.txt file with `pytest` dependency. Install dependencies. 
-```
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-### Refactor code
-- Added a `.gitignore` file to avoid IDE and cache files to be added to the repository. 
-``` 
-#.gitignore
-.idea
-.pytest_cache
-__pycache__
-```
