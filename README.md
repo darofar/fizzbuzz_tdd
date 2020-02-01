@@ -20,3 +20,18 @@ This test is meant to test properly configured environment with python 3.7 as pr
 $> python -m pytest test_fizz_buzz 
 /usr/bin/python: No module named pytest
 ```
+### Write minimum code that make test pass. 
+- Created a virtual environment with python 3.7 as interpreter. 
+```
+virtualenv -p /usr/bin/python3.7 .venv
+```
+- Added a requirements.txt file with `pytest` dependency. Install dependencies. 
+```
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Refactor code
+- Added a `.gitignore` file to avoid IDE and cache files to be added to the repository. 
+``` 
+```
