@@ -13,3 +13,7 @@ def test_fizz_buzz_1():
 
 def test_fizz_buzz_2():
     assert fizz_buzz(2) == 2
+
+
+def test_fizz_buzz_3():
+    assert fizz_buzz(3) == "Fizz"

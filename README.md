@@ -19,46 +19,36 @@ Also you can found documentation about this procedure [here](https://en.wikipedi
 ## Current step
 
 ### Write a test that fails. 
-Second use case test `fizz_buzz(2) = 2`. As current function always return `2` it will fails.
+Third use case test `fizz_buzz(3) = "Fizz"`. As current function always return the parameter it will fails.
 
 ```
 python -m pytest test_fizz_buzz.py 
 ======================================== test session starts ========================================
 platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
 rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 3 items                                                                                   
+collected 4 items                                                                                   
 
-test_fizz_buzz.py ..F                                                                         [100%]
+test_fizz_buzz.py ...F                                                                        [100%]
 
 ============================================= FAILURES ==============================================
-_________________________________________ test_fizz_buzz_2 __________________________________________
+_________________________________________ test_fizz_buzz_3 __________________________________________
 
-    def test_fizz_buzz_2():
->       assert fizz_buzz(2) == 2
-E       assert 1 == 2
-E        +  where 1 = fizz_buzz(2)
+    def test_fizz_buzz_3():
+>       assert fizz_buzz(3) == "Fizz"
+E       AssertionError: assert 3 == 'Fizz'
+E        +  where 3 = fizz_buzz(3)
 
-test_fizz_buzz.py:15: AssertionError
-==================================== 1 failed, 2 passed in 0.02s ====================================
-(.venv) darofar@tardis:~/workspace/keepler/tdd_katas/fizzbuzz_tdd$ 
+test_fizz_buzz.py:19: AssertionError
+==================================== 1 failed, 3 passed in 0.03s ==================================== 
 ``` 
 
 ### Write minimum code that make test pass.
-Now function returns the same number received and complaint with both test cases. 
+.
 ```
-python -m pytest test_fizz_buzz.py 
-======================================== test session starts ========================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 3 items                                                                                   
-
-test_fizz_buzz.py ...                                                                         [100%]
-
-========================================= 3 passed in 0.01s =========================================
 ```
 
 # Refactor 
-Nothing to do. 
+.
 
 <br />
 <br />
