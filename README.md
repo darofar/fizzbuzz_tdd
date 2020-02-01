@@ -45,6 +45,23 @@ test_fizz_buzz.py:28: AssertionError
 ==================================== 1 failed, 4 passed in 0.03s ====================================
 ``` 
 
+### Write minimum code that make test pass.
+We implement a new check just before multiple of 3 and multiple of 5 checks. This looks if the parameter is both 
+multiple of 3 and 5 and in that case returns `FizzBuzz` word. We skip the more direct way of check if parameter is 15, 
+cause we believe that with the work done until now  we have grasp some learning about the algorithm. 
+
+```
+python -m pytest test_fizz_buzz.py 
+======================================== test session starts ========================================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
+rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
+collected 5 items                                                                                   
+
+test_fizz_buzz.py .....                                                                       [100%]
+
+========================================= 5 passed in 0.01s =========================================
+```
+
 <br />
 <br />
 <hr />
