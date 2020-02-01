@@ -13,6 +13,9 @@ The following image resume this process:
 
 Also you can found documentation about this procedure [here](https://en.wikipedia.org/wiki/Test-driven_development)
 
+<br />
+<br />
+
 ## Current step
 
 ### Write a test that fails. 
@@ -35,14 +38,14 @@ test_fizz_buzz.py:7: NameError
 
 ```
 python -m pytest test_fizz_buzz.py 
-==========================================================
+======================================== test session starts ========================================
 platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
 rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 2 items                                                                                                                                                                                          
+collected 2 items                                                                                   
 
-test_fizz_buzz.py ..                                                                                                                                                                                 [100%]
+test_fizz_buzz.py ..                                                                          [100%]
 
-========================================================== 2 passed in 0.01s
+========================================= 2 passed in 0.01s =========================================
 ```
 
 <br />
