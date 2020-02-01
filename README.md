@@ -13,6 +13,28 @@ The following image resume this process:
 
 Also you can found documentation about this procedure [here](https://en.wikipedia.org/wiki/Test-driven_development)
 
+## Current step
+
+### Write a test that fails. 
+This test is meant to test the first use case for FizzBuzz algorithm. That `fizz_buzz(1) = 1`. It fails because a 
+function named `fizz_buzz` did not exists. 
+
+
+
+```
+$> python -m pytest test_fizz_buzz.py 
+==========================================================
+    def test_fizz_buzz_1():
+>       assert fizz_buzz(1) == 1
+E       NameError: name 'fizz_buzz' is not defined
+
+test_fizz_buzz.py:7: NameError
+==========================================================
+```
+
+
+## First Step
+
 ### Write a test that fails. 
 This test is meant to test properly configured environment with python 3.7 as project interpreter. 
 
