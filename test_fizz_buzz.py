@@ -22,7 +22,10 @@ def test_fizz_buzz_multiple_of_3():
 def test_fizz_buzz_multiple_of_5():
     assert fizz_buzz(5) == "Buzz"
     assert fizz_buzz(10) == "Buzz"
+    assert fizz_buzz(20) == "Buzz"
 
 
 def test_fizz_buzz_multiple_of_15():
     assert fizz_buzz(15) == "FizzBuzz"
+    assert fizz_buzz(30) == "FizzBuzz"
+    assert fizz_buzz(45) == "FizzBuzz"

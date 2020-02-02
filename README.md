@@ -18,64 +18,10 @@ Also you can found documentation about this procedure [here](https://en.wikipedi
 
 ## Current step
 
-### Write a test that fails. 
-From eleventh use case to fourteenth use case we did not implement any other test because we consider that all of them 
-are already covered by the test cases we got. When comming to the fifteenth use case we got the first one that expects a
-`FizzBuzz` word based on requirements. The tests fails. 
+### Write a test that fails?
+We are unable to find a test that fails based on requirements. We could pass over every number until 100 and all cases 
+are now covered. So instead we opt to do a final refactor. 
 
-```
-python -m pytest test_fizz_buzz.py 
-======================================== test session starts ========================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 5 items                                                                                   
-
-test_fizz_buzz.py ....F                                                                       [100%]
-
-============================================= FAILURES ==============================================
-___________________________________ test_fizz_buzz_multiple_of_15 ___________________________________
-
-    def test_fizz_buzz_multiple_of_15():
->       assert fizz_buzz(15) == "FizzBuzz"
-E       AssertionError: assert 'Fizz' == 'FizzBuzz'
-E         - Fizz
-E         + FizzBuzz
-
-test_fizz_buzz.py:28: AssertionError
-==================================== 1 failed, 4 passed in 0.03s ====================================
-``` 
-
-### Write minimum code that make test pass.
-We implement a new check just before multiple of 3 and multiple of 5 checks. This looks if the parameter is both 
-multiple of 3 and 5 and in that case returns `FizzBuzz` word. We skip the more direct way of check if parameter is 15, 
-cause we believe that with the work done until now  we have grasp some learning about the algorithm. 
-
-```
-python -m pytest test_fizz_buzz.py 
-======================================== test session starts ========================================
-platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
-rootdir: /home/darofar/workspace/keepler/tdd_katas/fizzbuzz_tdd
-collected 5 items                                                                                   
-
-test_fizz_buzz.py .....                                                                       [100%]
-
-========================================= 5 passed in 0.01s =========================================
-```
-
-### Refactor 
-We decide that it will be more clean to check if parameter is multiple of 15 instead of multiple of 3 and 5. This is 
-equivalent but we found more concise.
-
-From this:
-```
-    if n % 3 == 0 and n % 5 == 0:
-        return "FizzBuzz"
-```
-To this:
-```
-    if n % 15 == 0:
-        return "FizzBuzz"
-```
 
 <br />
 <br />
