@@ -16,21 +16,17 @@ Also you can found documentation about this procedure [here](https://en.wikipedi
 <br />
 <br />
 
-## Current step
+## Next steps
+We have reached the end of this practical exercise on TDD. We hope you have been a helpful showing how to use the TDD 
+technique. Some steps that could be followed after this exercise are:
 
-### Write a test that fails?
-We are unable to find a test that fails based on requirements. We could pass over every number until 100 and all cases 
-are now covered. So instead we opt to do a final refactor. 
+### Error control
+We have only focused on the requirements, that is, we only focus on the expected behavior of the algorithm. It would be 
+interesting to add some control routine for unexpected behaviors, such as exceptions and error messages.
 
-### Refactor
-We can automatize the tests generating series of numbers that complains with the four test cases. 
-
-```python
-FIZZBUZZ_NUMBERS = [i for i in range(15, 100, 15)]
-FIZZ_NUMBERS = [i for i in range(3, 100, 3) if i not in FIZZBUZZ_NUMBERS]
-BUZZ_NUMBERS = [i for i in range(5, 100, 5) if i not in FIZZBUZZ_NUMBERS]
-OTHER_NUMBERS = [i for i in range(1, 100) if i not in FIZZ_NUMBERS and i not in BUZZ_NUMBERS and i not in FIZZBUZZ_NUMBERS]
-```
+### Specs change
+The initial specifications may change, for example we could try to implement the algorithm taking into account that the 
+words FIZZ and BUZZ are not immutable and can be customized before execution. 
 
 
 <br />
@@ -47,3 +43,4 @@ OTHER_NUMBERS = [i for i in range(1, 100) if i not in FIZZ_NUMBERS and i not in 
 - [Step 6: fizz_buzz(6)](https://github.com/darofar/fizzbuzz_tdd/blob/2513a485b38a2a88036c524466a6332da361ff36/README.md)
 - [Step 7: fizz_buzz(10)](https://github.com/darofar/fizzbuzz_tdd/blob/f2aeb420ab07ac2d53ab15a8ef1037cb511276f6/README.md)
 - [Step 8: fizz_buzz(15)](https://github.com/darofar/fizzbuzz_tdd/blob/f36a16f7aa3f9677e2743126be1f82ef03478dde/README.md)
+- [Step 9: test automation](https://github.com/darofar/fizzbuzz_tdd/blob/839f1703c83c3de145668afcc327b36825865304/README.md)
